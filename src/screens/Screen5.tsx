@@ -9,13 +9,13 @@ export const Screen5: React.FC = () => {
   const [result, setResult] = useState<string>('');
 
   const menorque = () => {
-    const number1 = parseFloat(num1);
-    const number2 = parseFloat(num2);
+    const number1 = parseInt(num1);
+    const number2 = parseInt(num2);
 
     if (number1 < number2) {
       setResult('El primer número es menor que el segundo número.');
     } else if (number1 > number2) {
-      setResult('El segundo número es menor que el segundo número.');
+      setResult('El segundo número es menor que el primer número.');
     } else if (number1 === number2) {
         setResult('Los dos números son iguales.');
     } else {

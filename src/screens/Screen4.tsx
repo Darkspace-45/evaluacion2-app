@@ -9,8 +9,8 @@ export const Screen4: React.FC = () => {
   const [result, setResult] = useState<string>('');
 
   const mayorque = () => {
-    const number1 = parseFloat(num1);
-    const number2 = parseFloat(num2);
+    const number1 = parseInt(num1);
+    const number2 = parseInt(num2);
 
     if (number1 > number2) {
       setResult('El primer número es mayor que el segundo número.');
