@@ -13,6 +13,7 @@ export const Screen1 = ({ navigation }: any) => {
 
   const renderButtons = () => {
     return buttons.map((button) => (
+
       <TouchableOpacityButton
         key={button.title}
         title={button.title}
