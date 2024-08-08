@@ -25,7 +25,7 @@ export const Screen4: React.FC = () => {
   const [num2, setNum2] = useState<string>('');
   const [result, setResult] = useState<string>('');
 
-  const handleGreaterThan = () => {
+  const menorque = () => {
     const number1 = parseFloat(num1);
     const number2 = parseFloat(num2);
   
@@ -45,7 +45,7 @@ export const Screen4: React.FC = () => {
       <Text style={styles.textprimary}>Llene los siguientes campos:</Text>
       <NumberInput value={num1} onChangeText={setNum1} placeholder="Primer Número" />
       <NumberInput value={num2} onChangeText={setNum2} placeholder="Segundo Número" />
-      <Button title="Comparar Números" onPress={handleGreaterThan} />
+      <Button title="Comparar Números" onPress={menorque} />
       <Text style={styles.resultText}>Resultado: </Text>
       <Text style={styles.result}>{result}</Text>
     </View>
