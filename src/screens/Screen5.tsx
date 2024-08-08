@@ -26,7 +26,7 @@ export const Screen5: React.FC = () => {
   return (
     <View style={styles.container}>
         <Text style={styles.formulariotext}>Formulario Menor que</Text>
-      <Text style={styles.textprimary}>Llene los siguientes campos:</Text>
+      <Text style={styles.textprimary}>Completa los campos para {'\n'}      realizar la operación:</Text>
       <NumberInput value={num1} onChangeText={setNum1} placeholder="Primer Número" />
       <NumberInput value={num2} onChangeText={setNum2} placeholder="Segundo Número" />
       <Button title="Comparar" onPress={handleGreaterThan} />
